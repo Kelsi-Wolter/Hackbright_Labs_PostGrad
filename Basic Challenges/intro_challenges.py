@@ -89,10 +89,10 @@ def find_longest_word(words):
     """Return longest word in list of words.
     
     >>> find_longest_word(["hi", "hello"])
-    5
+    'The longest word was hello, with a length of 5'
 
     >>> find_longest_word(["Balloonicorn", "Hackbright"])
-    12
+    'The longest word was Balloonicorn, with a length of 12'
 
     """
 
@@ -133,7 +133,6 @@ def decode(s):
 
     >>> decode("2abh")
     'h'
-    Longer patterns should work:
 
     >>> decode("0h1ae2bcy")
     'hey'
