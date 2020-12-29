@@ -39,44 +39,47 @@ def find_range(nums):
 # evenly divisible by 3, say ‘fizz’. If the number is evenly divisible by 5, say ‘buzz’. 
 # If the number is evenly divisible by both 3 and 5, say ‘fizzbuzz’. 
 # Otherwise, say the number.
+    # >>> fizzbuzz()
+    # 1
+    # 2
+    # fizz
+    # 4
+    # buzz
+    # fizz
+    # 7
+    # 8
+    # fizz
+    # buzz
+    # 11
+    # fizz
+    # 13
+    # 14
+    # fizzbuzz
+    # 16
+    # 17
+    # fizz
+    # 19
+    # buzz
 
 # We given you a file, fizzbuzz.py, with a method, fizzbuzz:
 
 def fizzbuzz():
     """Count from 1 to 20 in fizzbuzz fashion.
     
-    >>> fizzbuzz()
-    1
-    2
-    fizz
-    4
-    buzz
-    fizz
-    7
-    8
-    fizz
-    buzz
-    11
-    fizz
-    13
-    14
-    fizzbuzz
-    16
-    17
-    fizz
-    19
-    buzz
-    
     """
+
+    printout = []
     for num in range(1, 21):
         if num % 3 == 0 and num % 5 == 0:
-            print('fizzbuzz')
+            printout.append('fizzbuzz')
         elif num % 3 == 0:
-            print('fizz')
+            printout.append('fizz')
         elif num % 5 == 0:
-            print('buzz')
+            printout.append('buzz')
         else:
-            print(num)
+            printout.append(num)
+        
+    return printout
 
 
 # Challenge 3: Longest Word
