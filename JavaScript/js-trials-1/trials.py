@@ -41,7 +41,18 @@ def get_odd_indices(items):
 
 
 def print_as_numbered_list(items):
-    pass  # TODO: replace this line with your code
+    '''Prints items in a list as a numbered list
+    >>> print_as_numbered_list([1, 'hello', True])
+    1. 1
+    2. hello
+    3. True
+    
+    '''
+    list_num = 1
+
+    for item in items:
+        print(f'{list_num}. {item}')
+        list_num += 1
 
 
 def get_range(start, stop):
