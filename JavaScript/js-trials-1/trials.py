@@ -56,11 +56,34 @@ def print_as_numbered_list(items):
 
 
 def get_range(start, stop):
-    pass  # TODO: replace this line with your code
+    '''Takes in two integers, returns list of integers within the range
+    >>> get_range(0, 5)
+    [0, 1, 2, 3, 4]
+    
+    '''
+    nums = []
+
+    for num in range(start, stop):
+        nums.append(num)
+
+    return nums
 
 
 def censor_vowels(word):
-    pass  # TODO: replace this line with your code
+    '''Replaces vowels in a string with asterisk
+    >>> censor_vowels('hello world')
+    'h*ll* w*rld'
+    
+    '''
+    chars = []
+
+    for letter in word:
+        if letter in 'aeiou':
+            chars.append('*')
+        else:
+            chars.append(letter)
+    
+    return ''.join(chars)
 
 
 def snake_to_camel(string):
