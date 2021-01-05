@@ -212,18 +212,17 @@ function compress(string) {
   let charCount = 0;
   for (const char of string) {
     if (char !== currChar) {
-      compressed.push(currChar);
-
+      compressed.push(currChar); 
       if (charCount > 1) {
         compressed.push(charCount.toString());
-      }
+        }
 
       currChar = char;
       charCount = 0;
-    }
+      }
 
     charCount += 1;
-  }
+    }
 
   compressed.push(currChar);
   if (charCount > 1) {
